@@ -6,7 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Sample data structure for model statistics
-# You might have this data collected from your training logs or manual setup
 data = {
     "Model": ["PyTorch", "TensorFlow", "Keras"],
     "Lines of Code": [200, 150, 120],
@@ -38,8 +37,7 @@ st.bar_chart(df.set_index("Model")["Accuracy"])
 st.write("### Speed to Train Comparison")
 st.bar_chart(df.set_index("Model")["Speed to Train (images/sec)"])
 
-# If you have accuracy vs epochs data, you can plot them
-# Assuming you might have a dictionary with epoch data
+# Epoch data here?
 accuracy_vs_epochs = {
     "PyTorch": np.random.rand(10),  # Random data for illustration
     "TensorFlow": np.random.rand(10),

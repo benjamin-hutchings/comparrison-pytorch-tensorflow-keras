@@ -1,7 +1,13 @@
 import streamlit as st
+from assets.asset_manager import AssetManager
+
+assets = AssetManager()
+
+# MNIST gif
+st.image(assets.mnist_gif, width=150, caption="MNIST Handwritting recognition dataset")
 
 # Page Title
-st.title('Neural Network Framework Comparison')
+st.title('Deep Learning Frameworks')
 
 # Introduction
 st.write("""
@@ -14,9 +20,11 @@ training, and evaluation, providing insights into their usability, flexibility, 
 st.header('Contents')
 st.write("""
 - **Overview**: A brief introduction to each framework and this project.
-- **Model Stats**: Comparison of model performance metrics across frameworks.
+- **The Neural Network**: Introducting the ANN architecture, the MNIST dataset and key control variables.
 - **Code Comparison**: Side-by-side code snippets showing how each framework implements the same model.
+- **Statistics**: Comparison of model performance metrics across frameworks.
 - **Try the Models!**: Interactive section to try out models and modify parameters.
+- **Reflections**: My closing thoughts...
 """)
 
 # Overview Section
@@ -30,8 +38,7 @@ affect both the development time and the performance of the models.
 # Summary of Pytorch
 col1, col2 = st.columns([1,2])
 with col1:
-    pytorch_logo = "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
-    st.image(pytorch_logo, width=100)
+    st.image(assets.pytorch_logo, width=150)
 with col2:
     st.subheader('PyTorch')
     st.write("""
@@ -43,8 +50,7 @@ with col2:
 # Summary of Tensorflow
 col1, col2 = st.columns([1,2])
 with col1:
-    tensorflow_logo = "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
-    st.image(tensorflow_logo, width=100)
+    st.image(assets.tensorflow_logo, width=150)
 with col2:
     st.subheader('TensorFlow')
     st.write("""
@@ -56,8 +62,7 @@ with col2:
 # Summary of Keras
 col1, col2 = st.columns([1,2])
 with col1:
-    keras_logo = "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"
-    st.image(keras_logo, width=100)
+    st.image(assets.keras_logo, width=150)
 with col2:
     st.subheader('Keras')
     st.write("""
