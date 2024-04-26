@@ -87,5 +87,4 @@ Through the web app's pages you can compare statistics, view sections of code, t
 """)
 
 # Footer
-st.markdown("---")
-st.markdown("Produced by Benjamin Hutchings | Contact me via Email or LinkedIn!")
+assets.add_footer()

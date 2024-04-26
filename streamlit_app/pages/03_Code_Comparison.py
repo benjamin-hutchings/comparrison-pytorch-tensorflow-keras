@@ -1,4 +1,7 @@
 import streamlit as st
+from assets.asset_manager import *
+
+assets = AssetManager()
 
 st.title("Code Comparison")
 st.write(
@@ -12,6 +15,8 @@ The comparison covers everything from data loading to model evaluation.
 
 """
 )
+
+st.write("---")
 
 st.sidebar.title("Code Blocks")
 sections = [
@@ -615,3 +620,6 @@ elif selected_section == "Evaluation":
     st.write(
         "If you've made it this far, it's time to look at some stats and try the models for yourself"
     )
+
+# Footer
+assets.add_footer()

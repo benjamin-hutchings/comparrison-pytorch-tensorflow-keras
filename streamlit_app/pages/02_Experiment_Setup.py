@@ -69,5 +69,4 @@ Navigate to other pages in this application to explore the code comparison, run 
 """)
 
 # Footer
-st.markdown("---")
-st.markdown("Produced by Benjamin Hutchings | Contact me via Email or LinkedIn!")
+assets.add_footer()
