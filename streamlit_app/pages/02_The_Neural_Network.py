@@ -15,6 +15,8 @@ It consists of three layers:
 
 # Model Diagram or Code
 st.code("""
+        
+        <REPLACE CODE WITH PICTURE>
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
