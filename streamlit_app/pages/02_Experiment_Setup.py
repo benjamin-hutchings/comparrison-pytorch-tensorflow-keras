@@ -1,7 +1,10 @@
 import streamlit as st
+from assets.asset_manager import *
+
+assets = AssetManager()
 
 # Page Title
-st.title('Neural Network Model Overview')
+st.title('Experiment Setup')
 
 # Introduction to the Model
 st.header('Model Architecture')
@@ -13,10 +16,12 @@ It consists of three layers:
 - **Output Layer:** A softmax layer that outputs the probability distribution across the 10 digit classes.
 """)
 
-# Model Diagram or Code
+st.write("""
+Here is the code in PyTorch - don't worry, we'll go over this in the next section!
+""")
+
+# Model Code
 st.code("""
-        
-        <REPLACE CODE WITH PICTURE>
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -30,6 +35,12 @@ class Net(nn.Module):
         x = torch.softmax(self.fc3(x), dim=1)
         return x
 """, language='python')
+
+st.write("""
+Imagine this neural network below but with two hidden layers, and a few more nodes and connections!
+""")
+
+st.image(assets.neural_net, width=250, caption="Multilayer Perceptron Network Example")
 
 # Explanation of Dataset
 st.header('MNIST Dataset')

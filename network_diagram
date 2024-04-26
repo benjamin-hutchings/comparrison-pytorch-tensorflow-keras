@@ -1,0 +1,15 @@
+digraph {
+	Input [label="Input (784)"]
+	FC1 [label="FC1 (784 -> 128)"]
+	ReLU1 [label=ReLU]
+	FC2 [label="FC2 (128 -> 64)"]
+	ReLU2 [label=ReLU]
+	FC3 [label="FC3 (64 -> 10)"]
+	Softmax [label=Softmax]
+	Input -> FC1
+	FC1 -> ReLU1
+	ReLU1 -> FC2
+	FC2 -> ReLU2
+	ReLU2 -> FC3
+	FC3 -> Softmax
+}
