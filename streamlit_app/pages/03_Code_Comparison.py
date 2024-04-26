@@ -6,7 +6,10 @@ st.write(
 This section compares the implementation of a simple neural network using three major frameworks: PyTorch, TensorFlow, and Keras. 
 The comparison covers everything from data loading to model evaluation.
 
-Use the 
+##### Use the navigation pane on the left to see different sections of code!
+
+*The full Jupyter notebooks are available on my [GitHub](https://github.com/benjamin-hutchings/comparrison-pytorch-tensorflow-keras).* 
+
 """
 )
 
