@@ -1,10 +1,12 @@
+import streamlit as st
+
 from assets.asset_manager import *
 
 assets = AssetManager()
 
 
 st.write("""
-
+         
 The three scripts provided each use a different deep learning framework—PyTorch, Keras, and TensorFlow without Keras—to build and train a neural network for classifying the MNIST dataset. Here are the key differences between each approach, along with their strengths and weaknesses:
 
 PyTorch
