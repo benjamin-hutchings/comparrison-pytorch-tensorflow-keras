@@ -38,7 +38,7 @@ if selected_section == "Runtime":
              """
     )
     # Runtime
-    runtime_data = load_data("./assets/script_data/runtime.csv")
+    runtime_data = load_data("../streamlit_app/assets/script_data/runtime.csv")
 
     # Convert all non-framework columns to cumulative sums
     cumulative_data = runtime_data.set_index("Framework").cumsum(axis=1).reset_index()
@@ -112,7 +112,7 @@ elif selected_section == "Usability":
     )
 
     # Load data
-    code_lines_data = load_data("./assets/script_data/code_lines.csv")
+    code_lines_data = load_data("../streamlit_app/assets/script_data/code_lines.csv")
 
     # Get unique stages from the DataFrame
     stages = code_lines_data["Stage"].unique()
