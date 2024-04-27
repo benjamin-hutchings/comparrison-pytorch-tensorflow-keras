@@ -182,7 +182,7 @@ elif selected_section == "Performance":
     )
 
     # Load performance data
-    performance_data = load_data("streamlit_app/assets/script_dataperformance.csv")
+    performance_data = load_data("streamlit_app/assets/script_data/performance.csv")
 
     # Display model performance metrics
     st.write("### Training, Validation, and Test Accuracies")
