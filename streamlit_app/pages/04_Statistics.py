@@ -188,7 +188,6 @@ elif selected_section == "Performance":
     st.write("### Training, Validation, and Test Accuracies")
 
     # Create a grouped bar chart
-    import plotly.express as px
     fig = px.bar(performance_data, x='Framework', y='Accuracy', color='TVT', barmode='group',
                  title="Accuracy Comparison across Training, Validation, and Test",
                  labels={"Accuracy": "Accuracy (%)", "Framework": "Framework", "TVT": "Type"})
