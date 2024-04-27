@@ -1,0 +1,10 @@
+Framework,TVT,Accuracy
+Pytorch,Training,95.61
+Pytorch,Validation,95.60
+Pytorch,Test,95.78
+TensorFlow,Training,99.71
+TensorFlow,Validation,98.56
+TensorFlow,Test,97.68
+Keras,Training,99.46
+Keras,Validation,97.58
+Keras,Test,97.68
