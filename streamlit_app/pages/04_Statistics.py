@@ -38,7 +38,7 @@ if selected_section == "Runtime":
              """
     )
     # Runtime
-    runtime_data = load_data("streamlit_app/assets/script_data/code_lines.csv")
+    runtime_data = load_data("streamlit_app/assets/script_data/runtime.csv")
 
     # Convert all non-framework columns to cumulative sums
     cumulative_data = runtime_data.set_index("Framework").cumsum(axis=1).reset_index()
@@ -112,7 +112,7 @@ elif selected_section == "Usability":
     )
 
     # Load data
-    code_lines_data = load_data("../streamlit_app/assets/script_data/code_lines.csv")
+    code_lines_data = load_data("streamlit_app/assets/script_data/code_lines.csv")
 
     # Get unique stages from the DataFrame
     stages = code_lines_data["Stage"].unique()
@@ -182,7 +182,7 @@ elif selected_section == "Performance":
     )
 
     # Load performance data
-    performance_data = load_data("../streamlit_app/assets/script_data/performance.csv")
+    performance_data = load_data("streamlit_app/assets/script_dataperformance.csv")
 
     # Display model performance metrics
     st.write("### Training, Validation, and Test Accuracies")
