@@ -19,7 +19,6 @@ Use the navigator on the left to view different metrics, and the widgets to inte
 """
 )
 
-
 # Load CSV data
 @st.cache_resource
 def load_data(datapath):
@@ -37,7 +36,7 @@ if selected_section == "Runtime":
              Take a look at the cumulative runtime for sections of model development and inferences made.
              """
     )
-    # Runtime
+    # Runtime data
     runtime_data = load_data("streamlit_app/assets/script_data/runtime.csv")
 
     # Convert all non-framework columns to cumulative sums
@@ -96,7 +95,7 @@ if selected_section == "Runtime":
     and evaluation, indicating that these stages are less computationally intensive or are optimized across all three 
     frameworks.
     
-    It is important to note that this experiement was ran on a CPU, if alternative hardware was targetting the results may vary.
+    It is important to note that this experiement was ran on a CPU, if alternative hardware was targetted the results may vary.
     """
     )
 
