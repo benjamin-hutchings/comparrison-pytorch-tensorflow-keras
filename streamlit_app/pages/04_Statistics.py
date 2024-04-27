@@ -38,7 +38,7 @@ if selected_section == "Runtime":
              """
     )
     # Runtime
-    runtime_data = load_data("../streamlit_app/assets/script_data/runtime.csv")
+    runtime_data = load_data("streamlit_app/assets/script_data/code_lines.csv")
 
     # Convert all non-framework columns to cumulative sums
     cumulative_data = runtime_data.set_index("Framework").cumsum(axis=1).reset_index()
