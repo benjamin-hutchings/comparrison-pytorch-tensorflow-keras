@@ -147,6 +147,12 @@ Comparison:
 Keras continues to provide ease with its evaluate method, streamlining the evaluation process.
 PyTorch and TensorFlow offer flexibility but require more code to correctly evaluate the model.
 
+
+What I learn:
+Using signatures for saving and loading a tf model without keras
+Streamlit app development - data visualisation, interactivity, caching and deployment
+some nuaces for .csv -> pandas df requirements for data visualisation
+
 """)
 
 

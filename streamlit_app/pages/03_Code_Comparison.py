@@ -228,6 +228,11 @@ elif selected_section == "Model Building":
             x = torch.softmax(self.fc3(x), dim=1)  # Apply the softmax activation function to the output of the third layer to normalize the output to a probability distribution over predicted output classes
             return x  # Return the final output of the network
         
+        # This is not required to train the model, but is when loading the model for deployment!
+        @tf.function(input_signature=[tf.TensorSpec(shape=[None, 784], dtype=tf.float32)])
+            def serve(self, x):
+            return self(x)
+        
     model = Net() # add '.to(device)' for hardware targeting (e.g., model.to('cuda') to run the model on a GPU)
     """,
         language="python",
