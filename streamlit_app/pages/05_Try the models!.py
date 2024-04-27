@@ -12,7 +12,7 @@ from assets.asset_manager import AssetManager
 assets = AssetManager()
 
 # Load Keras model
-keras_model = load_model('../streamlit_app/assets/trained_models/keras_model.keras')
+keras_model = load_model('streamlit_app/assets/trained_models/keras_model.keras')
 
 # Define and load the PyTorch model
 class Net(nn.Module):
@@ -30,13 +30,13 @@ class Net(nn.Module):
         return x
 
 torch_model = Net()
-torch_model.load_state_dict(torch.load('../streamlit_app/assets/trained_models/pytorch_model_state_dict.pth'))
+torch_model.load_state_dict(torch.load('streamlit_app/assets/trained_models/pytorch_model_state_dict.pth'))
 torch_model.eval()
 
 # Load TensorFlow model
 @st.cache_resource
 def load_tf_model():
-    model_path = '../streamlit_app/assets/trained_models/tf_model'
+    model_path = 'streamlit_app/assets/trained_models/tf_model'
     model = tf.saved_model.load(model_path)
     return model.signatures['serving_default']
 
@@ -79,11 +79,11 @@ st.write('''Upload an image, or use one of the sample MNIST images below for cla
 # Display sample MNIST images with download links
 st.write("## MNIST Sample Images")
 mnist_cols = st.columns(5)
-mnist_images = ['../streamlit_app/assets/mnist_samples/mnist_sample_0.png',
-                '../streamlit_app/assets/mnist_samples/mnist_sample_1.png',
-                '../streamlit_app/assets/mnist_samples/mnist_sample_4.png',
-                '../streamlit_app/assets/mnist_samples/mnist_sample_5.png',
-                '../streamlit_app/assets/mnist_samples/mnist_sample_9.png']
+mnist_images = ['streamlit_app/assets/mnist_samples/mnist_sample_0.png',
+                'streamlit_app/assets/mnist_samples/mnist_sample_1.png',
+                'streamlit_app/assets/mnist_samples/mnist_sample_4.png',
+                'streamlit_app/assets/mnist_samples/mnist_sample_5.png',
+                'streamlit_app/assets/mnist_samples/mnist_sample_9.png']
 
 for col, img_path in zip(mnist_cols, mnist_images):
     with col:
