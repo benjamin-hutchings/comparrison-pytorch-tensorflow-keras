@@ -1,12 +1,16 @@
-## Project Overview
+# Project Overview
 
-This project demonstrates how to build the same deep learning model across three different frameworks: PyTorch, Keras, and TensorFlow. The objective is to illustrate the differences in syntax and structure when using these frameworks and to compare their performance on a common task - in this case, producing a simple feedforward network trained to classify images in the MINST handwriting dataset.
+This project demonstrates how to build the same deep learning model in three different frameworks: PyTorch, Keras, and TensorFlow. The objective is to illustrate the differences in syntax and structure when using these frameworks and to compare their performance on a common task - in this case, producing a simple feedforward network trained to classify images in the MINST handwriting dataset.
 
-The scripts are availiable in juptyer notebooks and are hosted in a Streamlit web app, availiable here:
+The deep learning scripts are availiable in Juptyer Notebooks.
+
+# Streamlit
+
+The project is in a Streamlit web app, availiable in a live demo here:
 
 https://comparrison-pytorch-tensorflow-keras-kfvns3i3ex4rdxbtcjpwk4.streamlit.app/
 
-The Streamlit App provides an comprehensive overview, code comparison, interactive quantitative analysis and a demo for you to try the models with any image!
+The App provides an comprehensive overview, code comparison, interactive quantitative analysis and a demo for you to try the models with any image!
 
 # How to Use
 
