@@ -68,5 +68,8 @@ st.write("""
 Navigate to other pages in this application to explore the code comparison, run simulations, and view performance metrics for each framework.
 """)
 
+st.write(" ")
+st.image("https://media1.giphy.com/media/3o7TKyH7Ur3kvjGa5y/giphy.gif?cid=6c09b952gfv79hvcvioskbuhw6nrzo40pj06btw3vjls0j5w&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g", caption="We best be careful... ;)")
+
 # Footer
 assets.add_footer()

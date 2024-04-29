@@ -85,6 +85,8 @@ st.header('Usage')
 st.write("""
 Through the web app's pages you can compare statistics, view sections of code, try the models yourself and read my thoughts!
 """)
+st.write(" ")
+st.image("https://media.licdn.com/dms/image/D4E22AQG8Lvo7RAC5pw/feedshare-shrink_2048_1536/0/1709289499957?e=2147483647&v=beta&t=pD3UNGU-F1amkrca9ALnxklskUNLGdWj9ehJgCysRH8", caption="Let's go!")
 
 # Footer
 assets.add_footer()
