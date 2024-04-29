@@ -56,7 +56,12 @@ pip install -r requirements.txt
 streamlit streamlit run .\01_Overview.py
 ```
 
-Please note you will have to change the file locations to relative paths (add ../) for the .csv files and saved models for full functionality if hosted locally.
+Please note you will have to change the file locations to relative paths (add '../') in:
+
+- '04_Statistics.py'
+- & '05_Try_the_models.py'
+
+to correctly target the .csv files and saved models for full functionality if hosted locally.
 
 ## Thanks for viewing!
 
