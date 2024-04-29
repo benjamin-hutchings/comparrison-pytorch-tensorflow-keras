@@ -143,3 +143,6 @@ if uploaded_file is not None:
             st.info("The models disagree, showing the diversity in model training approaches.")
         
         st.write("### Congratulations on utilising an end-to-end machine learning application!")
+        
+# Footer
+assets.add_footer()
