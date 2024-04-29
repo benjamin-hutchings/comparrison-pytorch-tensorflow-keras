@@ -50,9 +50,9 @@ cd comparrison-pytorch-tensorflow-keras
 ```bash
 conda create -n myenv python=3.8
 conda activate myenv
-pip install -r requirements.txt
 
 cd streamlit_app
+pip install -r requirements.txt
 streamlit run .\00_DL_Framework_Comparrison.py
 ```
 
