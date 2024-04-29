@@ -56,6 +56,8 @@ Please note you will have to change the file locations to relative paths (add ..
 
 ## Thanks for viewing!
 
+Please ignore the typo in the repo name. ;)
+
 Any questions or feedback please reachout to me via my Website or LinkedIn.
 
 Best,
