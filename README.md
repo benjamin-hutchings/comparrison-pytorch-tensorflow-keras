@@ -42,12 +42,16 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/benjamin-hutchings/comparrison-pytorch-tensorflow-keras.git
 cd comparrison-pytorch-tensorflow-keras
+
 ```
 
 ## Host the Streamlit Web App locally
 
 ```bash
-pip install streamlit
+conda create -n myenv python=3.8
+conda activate myenv
+pip install -r requirements.txt
+
 cd streamlit_app
 streamlit run .\00_DL_Framework_Comparrison.py
 ```
