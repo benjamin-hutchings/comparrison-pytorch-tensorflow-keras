@@ -51,9 +51,9 @@ cd comparrison-pytorch-tensorflow-keras
 conda create -n myenv python=3.8
 conda activate myenv
 
-cd streamlit_app
+cd cd .\streamlit_app\
 pip install -r requirements.txt
-streamlit run .\00_DL_Framework_Comparrison.py
+streamlit streamlit run .\01_Overview.py
 ```
 
 Please note you will have to change the file locations to relative paths (add ../) for the .csv files and saved models for full functionality if hosted locally.
