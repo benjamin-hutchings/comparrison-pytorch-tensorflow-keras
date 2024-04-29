@@ -1,21 +1,23 @@
-This needs tidying up!!
-
 ## Project Overview
 
 This project demonstrates how to build the same deep learning model across three different frameworks: PyTorch, Keras, and TensorFlow. The objective is to illustrate the differences in syntax and structure when using these frameworks and to compare their performance on a common task - in this case, producing a simple feedforward network trained to classify images in the MINST handwriting dataset.
 
-The scripts are availiable in juptyer notebooks and are hosted in a Streamlit web app.
+The scripts are availiable in juptyer notebooks and are hosted in a Streamlit web app, availiable here:
 
-The Streamlit App (ADD LINK HERE) provides an comprehensive overview, code comparison, quantitative analysis and to try the models for yourself!
+https://comparrison-pytorch-tensorflow-keras-kfvns3i3ex4rdxbtcjpwk4.streamlit.app/
+
+The Streamlit App provides an comprehensive overview, code comparison, interactive quantitative analysis and a demo for you to try the models with any image!
 
 # How to Use
 
 Explore the Streamlit app to compare how each framework handles:
 
-Data loading and preprocessing
-Model definition and construction
-Training loops
-Evaluation and inference
+- Data loading and preprocessing
+- Model definition and construction
+- Training loops
+- Evaluation and inference
+- Overall metrics for complexity and accuracy
+
 The Jupyter notebooks provide detailed code annotations and explanations for each step in the model lifecycle.
 
 ## Requirements
@@ -25,6 +27,9 @@ The Jupyter notebooks provide detailed code annotations and explanations for eac
 - TensorFlow
 - Keras
 - Streamlit
+- Pandas
+
+No GPU targetting is required, all models were trained on CPU.
 
 ## Installation
 
@@ -37,49 +42,20 @@ cd comparrison-pytorch-tensorflow-keras
 
 ## Host the Streamlit Web App locally
 
-Run the bash file:
-
-...
-
-Or manually:
-
 ```bash
 pip install streamlit
 cd streamlit_app
 streamlit run .\00_DL_Framework_Comparrison.py
 ```
 
-# Setting Up a Virtual Environment
+Please note you will have to change the file locations to relative paths (add ../) for the .csv files and saved models for full functionality if hosted locally.
 
-It's recommended to use a virtual environment to manage the dependencies for your project. If you're using venv or conda, here's how you can set up a virtual environment for this project:
+## Thanks for viewing!
 
-For venv:
+Any questions or feedback please reachout to me via my Website or LinkedIn.
 
-'''bash
-python -m venv venv
-# Activate the environment
-# On Windows
-venv\Scripts\activate
-# On MacOS/Linux
-source venv/bin/activate
+Best,
 
-# Install requirements
-pip install -r requirements.txt
+Ben :)
 
-
-For Conda:
-'''bash
-Copy code
-conda create --name dl-framework-comparison python=3.8
-conda activate dl-framework-comparison
-
-# Install PyTorch (visit PyTorch's installation page to customize the command for your system)
-conda install pytorch torchvision -c pytorch
-
-# Install TensorFlow and Keras
-conda install tensorflow keras
-
-# Install Streamlit
-pip install streamlit
-'''
 
